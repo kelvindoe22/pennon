@@ -122,8 +122,7 @@ impl ArgParse {
 
     /// Returns a Vector containing all the stray arguments
     pub fn get_strays(&mut self) -> Vec<String> {
-        let a = std::mem::take(&mut self.stray);
-        a
+        std::mem::take(&mut self.stray)
     }
     
 }
