@@ -21,8 +21,8 @@ impl std::fmt::Display for ParseError {
 }
 
 pub struct ArgParse {
-    pub map: HashMap<String, Option<String>>,
-    pub stray: Vec<String>
+    map: HashMap<String, Option<String>>,
+    stray: Vec<String>
 }
 
 impl ArgParse {
